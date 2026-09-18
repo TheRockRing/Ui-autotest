@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 driver = webdriver.Chrome()
-driver.get("https://dev-agent.homecredit.kz/#/flushbarRoute")
+driver.get("https://dev-")
 
 
 time.sleep(5)
@@ -15,7 +15,7 @@ wait = WebDriverWait(driver, 30)
 element = wait.until(
     EC.presence_of_element_located((By.CSS_SELECTOR, "input[aria-label='Ваш ИИН']"))
 )
-element.send_keys("011212551163")
+element.send_keys("777777777")
 
 
 wait = WebDriverWait(driver, 30)
@@ -29,7 +29,7 @@ wait = WebDriverWait(driver, 30)
 password_input = wait.until(
     EC.presence_of_element_located((By.CSS_SELECTOR, "input[aria-label='Ваш пароль']"))
 )
-password_input.send_keys("QWEasd@123")
+password_input.send_keys("77777@123")
 
 
 wait = WebDriverWait(driver, 30)
@@ -43,7 +43,7 @@ wait = WebDriverWait(driver, 30)
 branch = wait.until(
     EC.presence_of_element_located((
         By.XPATH,
-        "//flt-semantics[text()='mcrBranch_Алматы_ТД Дана 051076']"
+        "//flt-semantics[text()='mcrBr777777777']"
     ))
 )
 driver.execute_script("arguments[0].click();", branch)
@@ -63,7 +63,7 @@ wait = WebDriverWait(driver, 30)
 branch = wait.until(
     EC.presence_of_element_located((
         By.XPATH,
-        "//flt-semantics[text()='mcrBranch_Алматы_Молл Апорт 052514']"
+        "//flt-semantics[text()='7777777 Апорт 052514']"
     ))
 )
 driver.execute_script("arguments[0].click();", branch)
